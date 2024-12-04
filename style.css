@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* responsive desktop */
+    
+  /* macro principale */
+    #wrapper{
+        /* DEBUG */
+        /* background-color: red; */
+        
+        display: flex;
+        height: calc(100vh - 150px);   
+    }
+
+    /* navigazione principale */
+    #wrapper nav{
+        background-color: #000;
+        
+        height: 100%;
+        width: 150px;
+    }
+
+    /* logo container */
+    .logo{
+        /* DEBUG */
+        /* background-color: red; */
+        
+        height: 50px;
+        width: 80%;
+        display: flex;
+    }
+
+    /* Logo img */
+    .logo img{
+        max-width: 80%;
+        margin-left: 10px;
+    }
+    
+    /* regole immagini lista */
+     nav ul img{
+        width: 20px;
+    }
+
+    /* regole lista */
+    nav ul{
+        color: #fff;
+        font-size: 10px;
+        margin-left: 10px;
+        list-style: none;
+        margin-top: 10px;
+        line-height: 25px;
+    }
+
+    /* regole link lista */
+    nav ul a{
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+    }
+
+    /* regole span lista */
+    nav ul span{
+        font-size: 10px;
+        margin-left: 5px;
+        font-weight: 300;
+    }
+
+    /* regole icone */
+    .create i{
+        padding: 8px;
+        background-color: #fff;
+        color: black;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+
+    /* regole parte inferiore nav */
+    .installa{
+        display: flex;
+        text-decoration: none;
+        color: #fff;
+        font-size: 10px ;
+        align-items: center;
+        margin-top: 85%;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    .installa img{
+        max-width: 15px;
+    }
+   
+    .profilo{
+        margin-top: 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+    }
+
+    .profilo img{
+        max-width: 15px;
+        background-color: gray;
+        border-radius: 10px;
+    }
+
+    .profilo span{
+        color: #fff;
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    /* contenuto principale */
+    #wrapper main{
+        background-color: #23272F;
+        
+        overflow: auto;
+        height: 100%;
+        width: calc(100% - 150px);
+    }
+
+    .upgrade{
+        background-color: #181821;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .upgrade a{
+        font-size: 10px;
+        color: #fff;
+        padding: 10px 30px;
+        border: 1px #fff solid;
+        border-radius: 40px;
+        text-decoration: none;
+    }
+
+    main ul a{
+        text-decoration: none;
+        color: #fff;
+        font-size:10px;
+        margin-right: 20px;
+    }
+
+    main ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    main h2{
+        color: #fff;
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    .played{
+        margin-top: 20px;
+    }
+
+    .played a img{
+        max-width: 15%;
+        margin-left: 5px;
+    }
+    /* test */
+    .played a{
+        color: #fff;
+    }
+
+    .played a span{
+        
+    }
+
+
+    /* controller player */
+    #player{
+        height: 100px;
+        background-color: darkgray;
+    }
+
+/* responsive mobile-small */
+@media screen and (max-width: 480px){
+
+    /* navigazione principale */
+    #wrapper nav{
+        width: 50px;
+    }
+
+    /* contenuto principale */
+    #wrapper main{
+        width: calc(100% - 50px);
+    }
+}
