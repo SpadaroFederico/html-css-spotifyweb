@@ -130,6 +130,8 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        position: sticky;
+        top: 0;
     }
 
     .upgrade a{
@@ -264,7 +266,41 @@
     #player{
         height: 60px;
         background-color: darkgray;
+        display: flex;
+        justify-content: space-between;
     }
+
+    .container-listen{
+        background-color: red;
+        width: 25%;
+        display:flex ;
+        align-items: center;
+    }
+
+    .container-listen img{
+        width: 40px;
+    }
+
+    .container-listen div{
+        display: inline-block;
+    }
+
+    .container-navbar{
+        background-color: red;
+        width: 40%;
+    }
+
+    .container-settings{
+        background-color: blue;
+        width: 25%;
+
+    }
+
+    .container-settings img{
+        width: 40px;
+    }
+
+    
 
 /* responsive mobile-small */
 @media screen and (max-width: 480px){
