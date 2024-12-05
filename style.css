@@ -43,6 +43,7 @@
     /* regole immagini lista */
      nav ul img{
         width: 20px;
+        opacity: 0.7;
     }
 
     /* regole lista */
@@ -55,11 +56,25 @@
         line-height: 25px;
     }
 
+    .green-border{
+        border-left: #09a120 3px solid;
+        margin-left: 0;
+    }
+
     /* regole link lista */
     nav ul a{
         text-decoration: none;
-        color: #fff;
+        color: #d8d8d8;
         display: flex;
+    }
+
+    /* hover effect nav */
+    nav ul a:hover{
+        color: #fff;
+    }
+
+    nav img:hover{
+        opacity: 1;
     }
 
     /* regole span lista */
@@ -143,11 +158,24 @@
         text-decoration: none;
     }
 
+    .upgrade a:hover{
+        font-size: 12px;
+        color: #fff;
+        padding: 12px 32px;
+        border: 1px #fff solid;
+        border-radius: 40px;
+        text-decoration: none;
+    }
+
     main ul a{
         text-decoration: none;
-        color: #fff;
+        color: gray;
         font-size:10px;
         margin-right: 20px;
+    }
+
+    main ul a:hover{
+        color: #fff;
     }
 
     main ul{
@@ -155,6 +183,10 @@
         display: flex;
         justify-content: center;
         margin-top: 10px;
+    }
+
+    .green-border-category{
+        border-bottom: 3px green solid;
     }
 
     main h2{
@@ -175,6 +207,23 @@
     }
 
     .container-played img{
+        max-width: 130px;
+    }
+
+    .circle-play{
+        display: none;
+        color: #fff;
+        font-size: 40px;
+    }
+
+    .circle-play:hover{
+        display: block;
+        color: #fff;
+        font-size: 40px;
+    }
+
+    .container-played img:hover{
+        opacity: 0.6;
         max-width: 130px;
     }
     
@@ -220,6 +269,12 @@
     .container-daily img{
         max-width: 145px;
     }
+
+    .container-daily img:hover{
+        opacity: 0.6;
+        max-width: 145px;
+        background-image: url(.fa-circle-play);
+    }
     
     .daily{
         margin-right: 10px;
@@ -249,6 +304,11 @@
         border-radius: 100px;
     }
     
+    .container-Artist img:hover{
+        opacity: 0.6;
+        max-width: 145px;
+    }
+
     .Artist{
         margin-right: 10px;
         text-align: center;
@@ -279,6 +339,7 @@
 
     .container-listen img{
         width: 40px;
+        margin-left: 10px;
     }
 
     .container-listen .text{
@@ -297,9 +358,24 @@
         color: #fff;
     }
 
-    .listen-icons{
+    .listen-icons .fa-heart{
         display:inline-block ;
-        margin-left: 10px;
+        opacity: 0.5;
+    }
+
+    .listen-icons .fa-folder{
+        display:inline-block ;
+        opacity: 0.5;
+    }
+
+    .listen-icons .fa-heart:hover{
+        display:inline-block ;
+        opacity: 1;
+    }
+
+    .listen-icons .fa-folder:hover{
+        display:inline-block ;
+        opacity: 1;
     }
 
     .listen-icons a{
@@ -326,7 +402,20 @@
     }
 
     .controller .fa-circle-play{
+        font-size: 25px;
+    }
+
+    .controller .fa-circle-play:hover{
         font-size: 30px;
+    }
+
+    .bar:hover{
+        background-color: rgb(46, 118, 46);
+        width: 100%;
+        height: 4px;
+        border-radius: 5px;
+        margin-top: 10px;
+        display: flex;
     }
 
     .bar{
@@ -382,12 +471,27 @@
     }
 
     .container-settings i{
+        opacity: 0.6;
         color: #fff;
         margin-left: 40px;
     }
 
+    .container-settings i:hover{
+        opacity: 1;
+        color: #fff;
+        margin-left: 40px;
+    }
+
+
     .volume-bar{
         background-color: gray;
+        height: 4px;
+        width: 30%;
+        margin-left: 20px;
+    }
+
+    .volume-bar:hover{
+        background-color: green;
         height: 4px;
         width: 30%;
         margin-left: 20px;
@@ -423,4 +527,62 @@
     #wrapper main{
         width: calc(100% - 50px);
     }
+
+    nav ul span{
+        display: none;
+    }
+
+    .create{
+        display: none;
+    }
+
+    .title{
+        display: none;
+    }
+
+    .installa{
+        display: flex;
+        text-decoration: none;
+        color: #fff;
+        font-size: 10px ;
+        align-items: center;
+        margin-top: 800%;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    .installa span{
+        display: none;
+    }
+
+    .profilo span{
+        display: none;
+    }
+
+    .container-played{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
 }
+
+/* responsive mobile-small */
+@media screen and (max-width: 730px){
+
+    .container-played{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .main ul{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+}
+
