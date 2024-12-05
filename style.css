@@ -565,11 +565,17 @@
         margin-top: 10px;
         margin-left: 10px;
     }
-
+    
+    .main ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
 }
 
 /* responsive mobile-small */
-@media screen and (max-width: 730px){
+@media screen and (max-width: 950px){
 
     .container-played{
         display: flex;
@@ -578,11 +584,6 @@
         margin-left: 10px;
     }
 
-    .main ul{
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 10px;
-    }
+    
 }
 
