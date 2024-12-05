@@ -275,10 +275,12 @@
         width: 25%;
         display:flex ;
         align-items: center;
+        text-align: center;
     }
 
     .container-listen img{
         width: 40px;
+
     }
 
     .container-listen div{
